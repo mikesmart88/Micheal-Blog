@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">{% block metadata %}{% endblock %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'blogapp/styles/home_base.css' %}">
+    <link rel="icon" type="image/jpg" href="{% static 'blogapp/media/themecl.jpg' %}">
+    <title> {% block title %}{% endblock %} </title>
+</head>
+
+<body>
+
+    <header class="head" id="head">
+        <nav class="navagation">
+            <a href="/" style="width: 100%; text-decoration:none; ">
+                <aside class="header-text">
+                    MY BLOG
+                </aside>
+            </a>
+            <aside class="contents">
+                <aside class="side-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </aside>
+                <aside class="nav-links">
+                    <a href="" class="links">Home</a>
+                    <a href="" class="links">Channels</a>
+                    <a href="" class="links">Movies</a>
+                    <a href="" class="links">Musics</a>
+                </aside>
+            </aside>
+        </nav>
+    </header>
+    
+</body>
+</html>
